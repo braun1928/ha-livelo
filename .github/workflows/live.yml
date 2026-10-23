@@ -1,8 +1,16 @@
-# Verifica semanalmente se a página da Livelo ainda é lida corretamente: falha quando a
-# Livelo muda a estrutura da página ou o Akamai bloqueia a requisição.
+# Verifica se a página da Livelo ainda é lida corretamente: falha quando a Livelo muda a
+# estrutura da página ou o Akamai bloqueia a requisição. Roda semanalmente e quando muda o
+# código que lê a página.
 name: Live page
 
 on:
+  push:
+    paths:
+      - .github/workflows/live.yml
+      - custom_components/livelo/api.py
+      - custom_components/livelo/const.py
+      - tests/test_live.py
+      - requirements_test.txt
   schedule:
     - cron: "0 11 * * 1"
   workflow_dispatch:
