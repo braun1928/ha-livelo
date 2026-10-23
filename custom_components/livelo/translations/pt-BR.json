@@ -1,0 +1,60 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Parceiros Livelo",
+        "description": "Escolha os parceiros a acompanhar, individualmente ou por categoria. Você recebe uma notificação quando os pontos por real ou a campanha mudarem. A lista é verificada diariamente no horário escolhido.",
+        "data": {
+          "categories": "Categorias",
+          "partners": "Parceiros",
+          "notify_services": "Notificar via",
+          "notify_new_partners": "Notificar novos parceiros",
+          "update_time": "Horário da verificação"
+        },
+        "data_description": {
+          "categories": "Todos os parceiros dessas categorias, inclusive os que entrarem depois.",
+          "partners": "Parceiros individuais, além das categorias.",
+          "notify_services": "Ações de notificação, como o app Home Assistant no celular. Deixe vazio para só disparar os eventos livelo_partner_changed e livelo_new_partner.",
+          "notify_new_partners": "Notificar quando qualquer parceiro entrar na Livelo, de qualquer categoria.",
+          "update_time": "Horário da verificação diária, no fuso horário do Home Assistant."
+        }
+      }
+    },
+    "abort": {
+      "cannot_connect": "Não foi possível obter a lista de parceiros da Livelo.",
+      "single_instance_allowed": "A Livelo já está configurada; altere nas opções dela."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Parceiros Livelo",
+        "description": "Escolha os parceiros a acompanhar, individualmente ou por categoria. Você recebe uma notificação quando os pontos por real ou a campanha mudarem. A lista é verificada diariamente no horário escolhido.",
+        "data": {
+          "categories": "Categorias",
+          "partners": "Parceiros",
+          "notify_services": "Notificar via",
+          "notify_new_partners": "Notificar novos parceiros",
+          "update_time": "Horário da verificação"
+        },
+        "data_description": {
+          "categories": "Todos os parceiros dessas categorias, inclusive os que entrarem depois.",
+          "partners": "Parceiros individuais, além das categorias.",
+          "notify_services": "Ações de notificação, como o app Home Assistant no celular. Deixe vazio para só disparar os eventos livelo_partner_changed e livelo_new_partner.",
+          "notify_new_partners": "Notificar quando qualquer parceiro entrar na Livelo, de qualquer categoria.",
+          "update_time": "Horário da verificação diária, no fuso horário do Home Assistant."
+        }
+      }
+    },
+    "abort": {
+      "cannot_connect": "Não foi possível obter a lista de parceiros da Livelo."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "promotions": {
+        "name": "Promoções"
+      }
+    }
+  }
+}

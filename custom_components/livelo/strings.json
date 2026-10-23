@@ -1,0 +1,60 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Livelo partners",
+        "description": "Pick the partners to follow, individually or by category. You get a notification when their points per real or campaign change. The list is checked daily at the chosen time.",
+        "data": {
+          "categories": "Categories",
+          "partners": "Partners",
+          "notify_services": "Notify via",
+          "notify_new_partners": "Notify new partners",
+          "update_time": "Check time"
+        },
+        "data_description": {
+          "categories": "Every partner in these categories, including ones added later.",
+          "partners": "Individual partners, in addition to the categories.",
+          "notify_services": "Notification actions, e.g. the Home Assistant app on your phone. Leave empty to only fire the livelo_partner_changed and livelo_new_partner events.",
+          "notify_new_partners": "Notify when any partner joins Livelo, whatever its category.",
+          "update_time": "Daily check time, in Home Assistant's time zone."
+        }
+      }
+    },
+    "abort": {
+      "cannot_connect": "Could not fetch the Livelo partner list.",
+      "single_instance_allowed": "Livelo is already configured; change it in its options."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Livelo partners",
+        "description": "Pick the partners to follow, individually or by category. You get a notification when their points per real or campaign change. The list is checked daily at the chosen time.",
+        "data": {
+          "categories": "Categories",
+          "partners": "Partners",
+          "notify_services": "Notify via",
+          "notify_new_partners": "Notify new partners",
+          "update_time": "Check time"
+        },
+        "data_description": {
+          "categories": "Every partner in these categories, including ones added later.",
+          "partners": "Individual partners, in addition to the categories.",
+          "notify_services": "Notification actions, e.g. the Home Assistant app on your phone. Leave empty to only fire the livelo_partner_changed and livelo_new_partner events.",
+          "notify_new_partners": "Notify when any partner joins Livelo, whatever its category.",
+          "update_time": "Daily check time, in Home Assistant's time zone."
+        }
+      }
+    },
+    "abort": {
+      "cannot_connect": "Could not fetch the Livelo partner list."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "promotions": {
+        "name": "Promotions"
+      }
+    }
+  }
+}

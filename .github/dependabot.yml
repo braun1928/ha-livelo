@@ -1,0 +1,22 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      actions:
+        patterns: ["*"]
+    # Seguem um branch (as últimas releases são de 2020/2022); o Dependabot trocaria o SHA
+    # por essas releases antigas. Atualize à mão para o último commit do branch.
+    ignore:
+      - dependency-name: home-assistant/actions
+      - dependency-name: hacs/action
+
+  - package-ecosystem: pip
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      test-requirements:
+        patterns: ["*"]
