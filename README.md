@@ -27,8 +27,12 @@ e notifica quando eles mudam.
 
 ## Instalação
 
-Pelo HACS: adicione `https://github.com/braun1928/ha-livelo` como repositório personalizado
-(tipo Integration) e instale a Livelo. Ou copie `custom_components/livelo` para
+Pelo HACS:
+
+[![Abrir no HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=braun1928&repository=ha-livelo&category=integration)
+
+Ou adicione `https://github.com/braun1928/ha-livelo` como repositório personalizado
+(tipo Integration) e instale a Livelo. Sem HACS, copie `custom_components/livelo` para
 `config/custom_components/` do Home Assistant. Reinicie e vá em Configurações → Dispositivos e
 serviços → Adicionar integração → Livelo.
 
